@@ -27,12 +27,31 @@ namespace sinemaBiletSatisUygulamasi
             kolaadet = Convert.ToInt32(kolagiris.Value);
             biletadet = Convert.ToInt32(biletgiris.Value);
             sonkasa = (int)Convert.ToUInt32(label10.Text);
+            if (misiradet== 0 && cayadet == 0 && kolaadet == 0 && biletadet == 0 )
+            {
+                MessageBox.Show("Ürün girişi yoksa fiş kesilmez");
+            }
+            else
+            {
+
+            
+           
             tutar = (5 * misiradet) + (2 * cayadet) + (4 * kolaadet) + (10 * biletadet);
           
             richTextBox1.AppendText(Environment.NewLine + "Fiş No: " + i + "\n" + "Tutar : " + tutar + "Tl"); 
             i++;
             kasa = tutar + sonkasa; 
               label10.Text = kasa.ToString();
+                temizle();
+            }
+        }
+
+        private void temizle()
+        {
+            misirgiris.Value = 0;
+            caygiris.Value = 0;
+            kolagiris.Value = 0;
+            biletgiris.Value = 0;
 
         }
     }
