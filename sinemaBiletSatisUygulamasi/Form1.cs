@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace sinemaBiletSatisUygulamasi
 {
@@ -14,7 +15,7 @@ namespace sinemaBiletSatisUygulamasi
     {
         public int misiradet,cayadet,kolaadet,biletadet,tutar,kasa, sonkasa;
         public static int i = 1;
-
+        private object txt;
         public Form1()
         {
             InitializeComponent();
@@ -33,16 +34,12 @@ namespace sinemaBiletSatisUygulamasi
             }
             else
             {
-
-            
-           
-            tutar = (5 * misiradet) + (2 * cayadet) + (4 * kolaadet) + (10 * biletadet);
-          
+             tutar = (5 * misiradet) + (2 * cayadet) + (4 * kolaadet) + (10 * biletadet);
             richTextBox1.AppendText(Environment.NewLine + "Fiş No: " + i + "\n" + "Tutar : " + tutar + "Tl"); 
             i++;
             kasa = tutar + sonkasa; 
-              label10.Text = kasa.ToString();
-                temizle();
+            label10.Text = kasa.ToString();
+            temizle();
             }
         }
 
@@ -52,7 +49,6 @@ namespace sinemaBiletSatisUygulamasi
             caygiris.Value = 0;
             kolagiris.Value = 0;
             biletgiris.Value = 0;
-
         }
     }
 }

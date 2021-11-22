@@ -70,7 +70,7 @@ namespace sinemaBiletSatisUygulamasi
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 71);
+            this.groupBox1.Location = new System.Drawing.Point(12, 10);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(205, 228);
             this.groupBox1.TabIndex = 0;
@@ -84,7 +84,7 @@ namespace sinemaBiletSatisUygulamasi
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(239, 71);
+            this.groupBox2.Location = new System.Drawing.Point(239, 10);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(200, 228);
             this.groupBox2.TabIndex = 1;
@@ -94,7 +94,7 @@ namespace sinemaBiletSatisUygulamasi
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.richTextBox1);
-            this.groupBox3.Location = new System.Drawing.Point(497, 71);
+            this.groupBox3.Location = new System.Drawing.Point(497, 10);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(200, 228);
             this.groupBox3.TabIndex = 1;
@@ -140,6 +140,11 @@ namespace sinemaBiletSatisUygulamasi
             // misirgiris
             // 
             this.misirgiris.Location = new System.Drawing.Point(47, 36);
+            this.misirgiris.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.misirgiris.Name = "misirgiris";
             this.misirgiris.Size = new System.Drawing.Size(120, 20);
             this.misirgiris.TabIndex = 6;
@@ -147,6 +152,11 @@ namespace sinemaBiletSatisUygulamasi
             // kolagiris
             // 
             this.kolagiris.Location = new System.Drawing.Point(47, 99);
+            this.kolagiris.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.kolagiris.Name = "kolagiris";
             this.kolagiris.Size = new System.Drawing.Size(120, 20);
             this.kolagiris.TabIndex = 7;
@@ -154,6 +164,11 @@ namespace sinemaBiletSatisUygulamasi
             // caygiris
             // 
             this.caygiris.Location = new System.Drawing.Point(47, 65);
+            this.caygiris.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.caygiris.Name = "caygiris";
             this.caygiris.Size = new System.Drawing.Size(120, 20);
             this.caygiris.TabIndex = 8;
@@ -161,6 +176,11 @@ namespace sinemaBiletSatisUygulamasi
             // biletgiris
             // 
             this.biletgiris.Location = new System.Drawing.Point(47, 131);
+            this.biletgiris.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.biletgiris.Name = "biletgiris";
             this.biletgiris.Size = new System.Drawing.Size(120, 20);
             this.biletgiris.TabIndex = 9;
@@ -215,6 +235,7 @@ namespace sinemaBiletSatisUygulamasi
             // 
             this.richTextBox1.Location = new System.Drawing.Point(7, 20);
             this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
             this.richTextBox1.Size = new System.Drawing.Size(187, 202);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
@@ -222,7 +243,7 @@ namespace sinemaBiletSatisUygulamasi
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(501, 345);
+            this.label9.Location = new System.Drawing.Point(504, 262);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(31, 13);
             this.label9.TabIndex = 2;
@@ -231,7 +252,7 @@ namespace sinemaBiletSatisUygulamasi
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(554, 345);
+            this.label10.Location = new System.Drawing.Point(557, 262);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(13, 13);
             this.label10.TabIndex = 3;
@@ -241,7 +262,7 @@ namespace sinemaBiletSatisUygulamasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(703, 288);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.groupBox2);
